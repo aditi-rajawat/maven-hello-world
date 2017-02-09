@@ -35,4 +35,15 @@ public class AppTest
     {
         assertTrue( true );
     }
+
+    public void testName() {
+        App app = new App();
+        assertEquals("my-app", app.getName());
+    }
+
+    public void testBool() {
+        App app = new App();
+        assertTrue(app.isTestProject());
+    }
+
 }
